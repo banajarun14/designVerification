@@ -7,7 +7,7 @@ module priorityEncoder4x2_tb;
         repeat(10) begin
             i = $random;
             #1;
-            $display("i=%0d, y=%0d",i,y);
+            //$display("i=%0d, y=%0d",i,y);
         end
         $monitor("i=%0d, y=%0d",i,y);
     end

@@ -7,7 +7,7 @@ module encoder4x2_tb;
     repeat (10) begin
         {i}= $random;
         #3;
-        $display("i=%b,y=%b",i,y);
+        //$display("i=%b,y=%b",i,y);
     end
   end
 endmodule

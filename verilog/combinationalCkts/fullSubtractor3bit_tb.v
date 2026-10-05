@@ -10,7 +10,7 @@ module fullSubtractor3bit_tb;
     repeat (10) begin
         {a,b,bin} = $random;
         #10;
-        $display("a=%b,b=%b,bin=%b,diff=%b,brw=%b",a,b,bin,diff,brw);
+        //$display("a=%b,b=%b,bin=%b,diff=%b,brw=%b",a,b,bin,diff,brw);
     end
   end
 endmodule

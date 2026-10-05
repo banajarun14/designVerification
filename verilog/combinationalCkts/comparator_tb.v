@@ -7,7 +7,7 @@ module comparator_tb;
     repeat (10) begin
         {a,b} = $random;
         #1;
-        $display("a=%b,b=%b,bin=%b,diff=%b,brw=%b",a,b,bin,diff,brw);
+        $display("a=%b,b=%b,[a=b]=%b,[a>b]=%b,[a<b]=%b",a,b,y1,y2,y3);
     end
   end
 endmodule

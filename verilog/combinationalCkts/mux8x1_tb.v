@@ -7,7 +7,7 @@ module mux8x1_tb;
     repeat(10) begin
 	{i0,i1,i2,i3,i4,i5,i6,i7,s0,s1,s2} = $random;
 	#1;
-    $display("i0=%b,i1=%b,i2=%b,i3=%b,s0=%b,s1=%b",i0,i1,i2,i3,s0,s1,y);
+    //$display("i0=%b,i1=%b,i2=%b,i3=%b,s0=%b,s1=%b",i0,i1,i2,i3,s0,s1,y);
     end
   end
 endmodule
