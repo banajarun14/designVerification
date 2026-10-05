@@ -1,0 +1,8 @@
+//Use half adder coded in halfAdder_structural.v to implement full adder
+
+module fullAdder_dataflow(input a,b,cin, output sum, cout);
+    wire s1,c1,c2;
+    halfAdder_structural ha1(a,b,s1,c1); //sum=s1; carry=c1 of 1st halfAdder
+    halfAdder_structural ha2(s1,cin,sum,c2); //sum=sum; carry=c2 of 2nd halfAdder
+    or o1(cout,c1,c2); //or gate for carry calculation
+endmodule
